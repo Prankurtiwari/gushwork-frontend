@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: '<app-slot-machine></app-slot-machine>',
   standalone: false,
-  styleUrl: './app.component.css'
+  styles: [],
 })
-export class AppComponent {
-  title = 'slot-machine-app';
-}
+export class AppComponent {}

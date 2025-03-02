@@ -1,0 +1,39 @@
+.slot-machine-container {
+  margin: 20px;
+  text-align: center;
+}
+
+.slot-table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.slot-cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+button {
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.credits {
+  margin-top: 10px;
+  font-size: 1.2em;
+}

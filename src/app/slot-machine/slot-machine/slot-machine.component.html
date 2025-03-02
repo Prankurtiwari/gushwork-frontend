@@ -1,0 +1,17 @@
+<div class="slot-machine-container">
+   <!-- Table with 3 blocks --> 
+   <table class="slot-table">
+      <tr>
+         <td *ngFor="let symbol of displayedSymbols" class="slot-cell"> {{ symbol }} </td>
+      </tr>
+   </table>
+   <!-- Button to start game/roll -->
+   <button (click)="startGame()" [disabled]="isSpinning">START GAME</button>
+   <!-- Display current credits --> 
+   <div class="credits"> Credits: {{ credits }} </div>
+   <!-- Cash Out Button with dynamic (mouseover) behavior --> 
+   <div class="actions"> <button #cashOutButton (mouseover)="onCashOutHover()" (click)="cashOut()" [ngStyle]="cashOutButtonStyle" [disabled]="cashOutDisabled"> CASH OUT </button> </div>
+   <!-- Display messages --> 
+   <div class="message"> {{ message }} </div>
+</div>
+
